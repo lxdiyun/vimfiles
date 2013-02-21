@@ -1,0 +1,28 @@
+# if
+snippet if
+	IF ${1:% condition}
+	THEN
+	   ${2:% code}
+	ENDIF;
+# funciotn define
+snippet fun
+	DCL ${1:funciotn_name} ${2:funciton_type} IS
+	BLOCK
+	   ${3:% code}
+	ENDBLOCK ${1} 
+# variable definition	
+snippet var
+	DCL ${1:variable_name} ${2:variable_type}
+# case 
+snippet case
+	CASE ${1:condition} IN
+	{${3:situation}}:
+	   ${4:% code}
+	OUT
+	   ${2:% code}
+	ENDCASE; %% CASE ${1}
+snippet CAST
+	CAST ${1:variable} AS ${2:type}
+		
+		
+	

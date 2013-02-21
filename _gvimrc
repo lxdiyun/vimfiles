@@ -1,0 +1,38 @@
+"""""""""""""""""""""""""""""""""""""
+" personal GVIM setting
+"""""""""""""""""""""""""""""""""""""
+"set GUI font
+set guifont=NSimSun:h11
+" set tab label style under GUI mode
+set guitablabel=%N\ %t
+" use Black colorscheme
+colorscheme Black
+" set window size
+set lines=52 columns=85
+" maximize the window
+au GUIEnter * simalt ~x
+" taglist menu 
+nmenu &Taglist.&Open/Close\ Taglist<TAB><F8>  :Tlist <CR>
+nmenu &Taglist.&Update\ Taglist<TAB><F5>  :call PtUpdateTag() <CR>
+
+"""""""""""""""""""""""""""""""""""""
+" Self-defining hot key binding
+"""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""
+" Self-command definition
+"""""""""""""""""""""""""""""""""""""
+command -nargs=1 SetOp call SetOpacity(<args>)
+
+"""""""""""""""""""""""""""""""""""""
+" Self_defining function
+"""""""""""""""""""""""""""""""""""""
+" set Transparent
+fun SetOpacity(percent)
+   if a:percent >= 0 && a:percent <= 100
+     call libcallnr("vimtweak.dll", "SetAlpha", (a:percent*255/100))
+  else
+     echo "Invalid Input"
+  endif
+endfun
+
