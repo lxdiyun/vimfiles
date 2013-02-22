@@ -1,9 +1,9 @@
 " self setting
 source $HOME/.vim/vimrc_local.vim
 
-"if filereadable($HOME."/.vim/vimrc_mac.vim")
-"	source $HOME/.vim/vimrc_mac.vim 
-"endif
+if filereadable($HOME."/.vimrc_mac.vim")
+	source $HOME/.vimrc_mac.vim 
+endif
 
 " set backup dir 
 set backupdir=~/VimBackup
