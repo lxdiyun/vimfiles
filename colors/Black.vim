@@ -44,7 +44,6 @@ hi DiffText             guifg=red guibg=LightYellow gui=bold ctermbg=LightYellow
 hi Folded               ctermfg=black ctermbg=lightgrey
 hi PmenuSel             ctermbg=LightRed ctermfg=black cterm=none guibg=black guifg=white gui=none
 hi Pmenu                ctermbg=lightgrey ctermfg=black cterm=none guibg=grey guifg=white gui=none
-hi jediFunction         ctermfg=6 ctermbg=242 guifg=Black guibg=Grey
 
 " For showmarks plug-in
 hi ShowMarksHLl ctermbg=Yellow   ctermfg=Black  guibg=#FFDB72    guifg=Black
