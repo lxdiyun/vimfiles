@@ -23,6 +23,8 @@ source $VIMRUNTIME/vimrc_example.vim
 "behave mswin
 " set file encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
+" set encoding
+set encoding=utf-8
 " set no wrap up
 set nowrap
 " set side scroll speed
