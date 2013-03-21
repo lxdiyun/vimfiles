@@ -70,7 +70,7 @@ set laststatus=2
 " set statusline
 set statusline=%<[%02n]\ %F%(\ %m%h%w%y%r%)\ %-a%=[%l,%03c-%03v]\ \ [%L]\ \ [%3.5P]\ \ [%05.8OH:%2BH]
 "Paste toggle - when pasting something in, don't indent.
-set pastetoggle=--
+set pastetoggle=<F12>
 " show a menu when using tab complementation under command mode
 set wildmenu
 " Required to be able to use keypad keys and map missed escape sequences
