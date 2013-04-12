@@ -1,6 +1,8 @@
 """""""""""""""""""""""""""""""""""""
 " personal GVIM setting
 """""""""""""""""""""""""""""""""""""
+"set GUI language
+language English
 "set GUI font
 set guifont=NSimSun:h11
 " set tab label style under GUI mode
