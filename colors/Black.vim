@@ -5,7 +5,7 @@ runtime colors/default.vim
 
 let g:colors_name = "Black"
 
-hi Normal guibg=black guifg=GhostWhite
+hi Normal guibg=black guifg=GhostWhite ctermbg=black
 hi NonText guibg=black ctermbg=233
 
 " More faded is too similar to blue on LCDs.
