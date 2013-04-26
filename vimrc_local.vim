@@ -99,6 +99,8 @@ set formatoptions=otcq
 set completeopt=menu,longest
 " Limit popup menu height
 set pumheight=15
+" set autoc change dir
+set autochdir
 
 """""""""""""""""""""""""""""""""""""
 " Self_defining function
