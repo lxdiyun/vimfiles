@@ -502,6 +502,10 @@ let g:LookupFile_DefaultCmd = ':LUWalk'
 let g:ipy_completefunc = 'local'
 
 """""""""""""""""""""""""""""""""""""
+" CtrlP setting
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+"""""""""""""""""""""""""""""""""""""
 " jedi-vim setting
 let g:jedi#popup_select_first = 0
 
