@@ -43,7 +43,7 @@ hi DiffDelete           ctermfg=black guifg=black ctermbg=LightCyan guibg=LightC
 hi DiffText             guifg=red guibg=LightYellow gui=bold ctermbg=LightYellow ctermfg=darkred cterm=bold
 hi Folded               ctermfg=black ctermbg=lightgrey
 hi PmenuSel             ctermbg=LightRed ctermfg=black cterm=none guibg=black guifg=white gui=none
-hi Pmenu                ctermbg=lightgrey ctermfg=black cterm=none guibg=grey guifg=white gui=none
+hi Pmenu                ctermbg=lightgrey ctermfg=black cterm=none guibg=grey guifg=black gui=none
 
 " For showmarks plug-in
 hi ShowMarksHLl ctermbg=Yellow   ctermfg=Black  guibg=#FFDB72    guifg=Black
