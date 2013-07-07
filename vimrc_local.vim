@@ -286,7 +286,7 @@ fun AddOrRemoveComment(currentMode)
 			let addCommand = 's#^#"#'
 			let removeCommand = 's#"##'
 			break
-		elseif ft = 'autohotkey'
+		elseif ft == 'autohotkey'
 			let commentPattern = '^\ *\;'
 			let addCommand = 's#^#;#'
 			let removeCommand = 's#;##'
