@@ -291,7 +291,7 @@ fun AddOrRemoveComment(currentMode)
 			let addCommand = 's#^#;#'
 			let removeCommand = 's#;##'
 			break
-		elseif ft =~ '\<objc\>\|\<cpp\>\|\<cs\>\|\<c\>'
+		elseif ft =~ '\<objc\>\|\<cpp\>\|\<cs\>\|\<c\>\|\<java.*\>'
 			let commentPattern = '^\ *\/\/'
 			let addCommand = 's#^#//#'
 			let removeCommand = 's#//##'
