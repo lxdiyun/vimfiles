@@ -591,3 +591,13 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+
+""""""""""""""""""""""""""""""""""""""""""""""
+" syntastic setting
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=0
+
+""""""""""""""""""""""""""""""""""""""""""""""
+" jedi-vim setting
+let g:jedi#show_function_definition = "0"
