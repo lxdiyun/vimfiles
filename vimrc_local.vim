@@ -511,10 +511,6 @@ let g:ipy_completefunc = 'local'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
 """""""""""""""""""""""""""""""""""""
-" jedi-vim setting
-let g:jedi#popup_select_first = 0
-
-"""""""""""""""""""""""""""""""""""""
 "  neocomplcache setting
 " Disable AutoComplPop. Comment out this line if AutoComplPop is not installed.
 "let g:acp_enableAtStartup = 0
@@ -601,3 +597,7 @@ let g:syntastic_auto_jump=0
 """"""""""""""""""""""""""""""""""""""""""""""
 " jedi-vim setting
 let g:jedi#show_call_signatures = "0"
+let g:jedi#popup_select_first = "0"
+let g:jedi#auto_initialization = 1
+let g:jedi#popup_on_dot = 0
+autocmd  FileType python let b:did_ftplugin = 1
