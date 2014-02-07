@@ -22,4 +22,3 @@ if version >= 703
 " set undo dir
    set undodir=~/VimBackup
 endif
-

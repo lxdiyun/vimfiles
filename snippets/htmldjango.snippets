@@ -5,7 +5,7 @@ snippet %
 snippet %%
 	{% ${1:tag_name} %}
 	${2}
-	{% end $1 %}
+	{% end$1 %}
 snippet {
 	{{ ${1} }}${2}
 # Template Tags
@@ -15,7 +15,7 @@ snippet autoescape
 		${2}
 	{% endautoescape %}
 snippet block
-	{% block ${1} %}
+	{% block ${1:block_name} %}
 		${2}
 	{% endblock $1 %}
 snippet #
