@@ -291,7 +291,7 @@ fun AddOrRemoveComment(currentMode)
 			let addCommand = 's#^#;#'
 			let removeCommand = 's#;##'
 			break
-		elseif ft =~ '\<objc\>\|\<cpp\>\|\<cs\>\|\<c\>\|\<java.*\>'
+		elseif ft =~ '\<objc\>\|\<cpp\>\|\<cs\>\|\<c\>\|\<java.*\>\|\<go\>'
 			let commentPattern = '^\ *\/\/'
 			let addCommand = 's#^#//#'
 			let removeCommand = 's#//##'
@@ -370,11 +370,12 @@ autocmd  BufEnter * nested  call ADInitSnipMate()
 """""""""""""""""""""""""""""""""""""
 " Self-defining hot key binding
 """""""""""""""""""""""""""""""""""""
+" taglist/tagbar mapping 
+nnoremap -= :Tagbar<CR> 
+
 " nerd tree
 nmap -0 :NERDTreeToggle<CR>
 
-" taglist mapping 
-nnoremap -= :Tlist<CR> 
 
 " omnicppcomplete generate tag file by hot key
 " map <C-F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
@@ -533,3 +534,7 @@ autocmd  FileType python let b:did_ftplugin = 1
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#enable_auto_select = 0
+
+""""""""""""""""""""""""""""""""""""""""""""""
+" tagbar
+let g:tagbar_width = 32
