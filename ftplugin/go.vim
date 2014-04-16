@@ -1,5 +1,3 @@
-au BufWritePost *.go silent! !ctags -R &
-au FileType go au BufWritePre <buffer> Fmt
 
 let g:tagbar_type_go = {
 			\ 'ctagstype' : 'go',
