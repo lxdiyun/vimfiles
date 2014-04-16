@@ -276,24 +276,24 @@ fun AddOrRemoveComment(currentMode)
 	let selectBufString = getbufline('%', currentLines)
 	let selectIsComment = 1
 
-	let commentPattern = '^\ *#'
-	let addCommand = 's/^/#/'
+	let commentPattern = '^[\ \t]*#'
+	let addCommand = 's/^\([\ \t]*\)/\1#/'
 	let removeCommand = 's/#//'
 
 	for ft in split(&filetype, '\.')
 		if ft == 'vim'
-			let commentPattern = '^\ *\"'
+			let commentPattern = '^[\ \t]*\"'
 			let addCommand = 's#^#"#'
 			let removeCommand = 's#"##'
 			break
 		elseif ft == 'autohotkey'
-			let commentPattern = '^\ *\;'
+			let commentPattern = '^[\ \t]*\;'
 			let addCommand = 's#^#;#'
 			let removeCommand = 's#;##'
 			break
 		elseif ft =~ '\<objc\>\|\<cpp\>\|\<cs\>\|\<c\>\|\<java.*\>\|\<go\>'
-			let commentPattern = '^\ *\/\/'
-			let addCommand = 's#^#//#'
+			let commentPattern = '^[\ \t]*\/\/'
+			let addCommand = 's#^\([\ \t]*\)#\1//#'
 			let removeCommand = 's#//##'
 		endif
 	endfor
