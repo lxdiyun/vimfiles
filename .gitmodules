@@ -52,3 +52,15 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/javascript-libraries-syntax.vim"]
+	path = bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "bundle/ember.vim"]
+	path = bundle/ember.vim
+	url = https://github.com/dsawardekar/ember.vim.git
+[submodule "bundle/portkey"]
+	path = bundle/portkey
+	url = https://github.com/dsawardekar/portkey.git
+[submodule "bundle/vim-mustache-handlebars"]
+	path = bundle/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars.git
