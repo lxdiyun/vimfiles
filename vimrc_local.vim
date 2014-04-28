@@ -394,11 +394,10 @@ nnoremap -7 :Hexmode<CR>
 " snip mate
 nnoremap -6 :SnipMate<cr> 
 
-" enable django syntax
-nnoremap -5 :setfiletype htmldjango<cr>
-
 " enable neocomplete
-nnoremap -4 :NeoCompleteToggle<cr>
+nnoremap -5 :NeoCompleteToggle<cr>
+
+" 1~4 reserved for filetype
 
 " smart paste from clipboard
 imap <C-Insert>  <C-O>:set paste<CR><C-r>*<C-O>:set nopaste<CR>
