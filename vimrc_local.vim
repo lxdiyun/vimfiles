@@ -545,7 +545,7 @@ autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 
-let g:used_javascript_libs = 'underscore,angularjs'
+let g:used_javascript_libs = 'underscore,angularjs,angularui'
 
 """"""""""""""""""""""""""""""""""""""""""""""
 " go.vim
