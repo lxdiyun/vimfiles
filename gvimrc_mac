@@ -2,7 +2,7 @@
 " personal GVIM setting
 """""""""""""""""""""""""""""""""""""
 "set GUI language
-language English
+"language English
 "set GUI font
 set guifont=Menlo:h15
 " set tab label style under GUI mode
