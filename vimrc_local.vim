@@ -489,7 +489,7 @@ let Tlist_Exit_OnlyWindow=1
 " Enable ShowMarks
 let g:showmarks_enable = 1
 " Show which marks
-"let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 " Ignore help, quickfix, non-modifiable buffers
 "let g:showmarks_ignore_type = "hqm"
 " Hilight lower & upper marks
