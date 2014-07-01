@@ -56,10 +56,10 @@
 	path = bundle/javascript-libraries-syntax.vim
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
 [submodule "bundle/ember.vim"]
-	path = bundle/ember.vim
+	path = disabled_bundle/ember.vim
 	url = https://github.com/dsawardekar/ember.vim.git
 [submodule "bundle/portkey"]
-	path = bundle/portkey
+	path = disabled_bundle/portkey
 	url = https://github.com/dsawardekar/portkey.git
 [submodule "bundle/vim-mustache-handlebars"]
 	path = bundle/vim-mustache-handlebars
