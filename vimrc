@@ -5,6 +5,10 @@ if filereadable($HOME."/.vimrc_mac.vim")
 	source $HOME/.vimrc_mac.vim 
 endif
 
+if filereadable($HOME."/.vimrc_linux.vim")
+	source $HOME/.vimrc_linux.vim 
+endif
+
 " set backup dir 
 set backupdir=~/VimBackup
 " set snippes file dir
