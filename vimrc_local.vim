@@ -68,7 +68,7 @@ set nocursorline
 " always show status line
 set laststatus=2
 " set statusline
-set statusline=%<[%02n]\ %F%(\ %m%h%w%y%r%)\ %-a%=[%l,%03c-%03v]\ \ [%L]\ \ [%3.5P]\ \ [%05.8OH:%2BH]
+"set statusline=%<[%02n]\ %F%(\ %m%h%w%y%r%)\ %-a%=[%l,%03c-%03v]\ \ [%L]\ \ [%3.5P]\ \ [%05.8OH:%2BH]
 "Paste toggle - when pasting something in, don't indent.
 set pastetoggle=<F12>
 " show a menu when using tab complementation under command mode
@@ -87,8 +87,6 @@ filetype plugin indent on
 set listchars=tab:>-
 " show list
 set list
-" set tab label line
-set tabline=%!MyTabLine()
 " auto show table line
 set showtabline=1
 " set mouse active mode
@@ -174,76 +172,6 @@ function ADClearControlCharavter()
 	"   :execute '%s///g'
 	"   :execute '%s///g'
 endfunction
-
-" tabline function
-function MyTabLine()
-	let s = ''
-	let tabcolor = ''
-	let tabnumcolor = ''
-	for i in range(tabpagenr('$'))
-		" select the highlighting
-		if i + 1 == tabpagenr()
-			let tabcolor .= '%#TabLineSel#'
-			let tabnumcolor = '%#TabLineIndexSel#'
-		else
-			let tabcolor .= '%#TabLine#'
-			let tabnumcolor = '%#TabLineIndex#'
-		endif
-
-		let s .= tabcolor 
-
-		" set the tab page number (for mouse clicks)
-		let s .= '%' . (i + 1) . 'T'
-
-		" the label is made by MyTabLabel()
-		let s .= tabnumcolor.(i+1).tabcolor.'[%{MyTabLabel(' . (i + 1) . ')}] '
-	endfor
-
-	" after the last tab fill with TabLineFill and reset tab page nr
-	let s .= '%#TabLineFill#%T'
-
-	" right-align the label to close the current tab page
-	if tabpagenr('$') > 1
-		let s .= '%=%#TabLine#%999XX'
-	endif
-
-	return s
-endfunction
-
-" tablable funtion
-function MyTabLabel(n)
-	let buflist = tabpagebuflist(a:n)
-	let winnr = tabpagewinnr(a:n)
-	let filename = bufname(buflist[winnr - 1])
-	let filename = fnamemodify(filename, ':p:t') 
-	return filename
-endfunction
-
-" Init snipMate
-fun ADInitSnipMate()
-	let b:snipMateOn = 0
-	call ResetSnippets()
-	call ADUpdateSnipFile(0)
-endfun
-
-" update or reset snipMate file
-let b:snipMateOn = 0
-fun ADUpdateSnipFile(echoMsg)
-	if 0 == b:snipMateOn
-		let g:snippets_dir = "~/.vim/snippets,~/.vim/bundle/snipMate/snippets"
-		call GetSnippets(g:snippets_dir, &filetype)
-		if 1 == a:echoMsg
-			echo "SnipMate On"         
-		endif
-		let b:snipMateOn = 1
-	else
-		call ResetSnippets()
-		if 1 == a:echoMsg
-			echo "SnipMate Off"         
-		endif
-		let b:snipMateOn = 0 
-	endif
-endfun
 
 " format text function
 fun ADIndent()
@@ -357,15 +285,12 @@ endfunction
 """""""""""""""""""""""""""""""""""""
 " Self-command definition
 """""""""""""""""""""""""""""""""""""
-command! -nargs=0 -bar SnipMate call ADUpdateSnipFile(1)
-
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
 
 """""""""""""""""""""""""""""""""""""
 " Self-auto-command definition
 """""""""""""""""""""""""""""""""""""
-autocmd  BufEnter * nested  call ADInitSnipMate()
 
 """""""""""""""""""""""""""""""""""""
 " Self-defining hot key binding
@@ -550,3 +475,8 @@ let g:used_javascript_libs = 'underscore,angularjs,angularui'
 """"""""""""""""""""""""""""""""""""""""""""""
 " go.vim
 let g:go_disable_autoinstall = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""
+" statusline airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 1

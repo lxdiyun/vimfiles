@@ -11,5 +11,5 @@ syn region mustacheScriptTemplate start=+<script [^>]*type *=[^>]*text/\(mustach
 nnoremap -3 :setfiletype mustache<cr>
 
 " enable django syntax
-nnoremap -4 :setfiletype htmldjango<cr>
+nnoremap -4 :setfiletype htmldjango.html<cr>
 
