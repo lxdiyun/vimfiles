@@ -475,8 +475,12 @@ let g:used_javascript_libs = 'underscore,angularjs,angularui'
 """"""""""""""""""""""""""""""""""""""""""""""
 " go.vim
 let g:go_disable_autoinstall = 1
+let g:go_gotags_bin = 'gotags'
 
 """"""""""""""""""""""""""""""""""""""""""""""
 " statusline airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#tab_min_count = 2
+let g:airline#extensions#tabline#formatter = 'unique_tail'
