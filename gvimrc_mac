@@ -4,7 +4,7 @@
 "set GUI language
 "language English
 "set GUI font
-set guifont=Menlo:h15
+set guifont=Menlo:h14
 " set tab label style under GUI mode
 set guitablabel=%N\ %t
 " use Black colorscheme

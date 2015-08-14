@@ -8,6 +8,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin($HOME.'/.vim/vundle')
 
 " Plugin List
+" AutoComplete
+Plugin 'vim-scripts/AutoComplPop'
 " OmniCppComplete
 Plugin 'vim-scripts/OmniCppComplete'
 " vim scirpts
@@ -36,6 +38,8 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'burnettk/vim-angular'
+"Plugin 'dsawardekar/ember'
+"Plugin 'dsawardekar/portkey'
 " Coffee
 Plugin 'vim-coffee-script'
 Plugin 'lukaszkorecki/CoffeeTags'

@@ -1,12 +1,6 @@
 [submodule "bundle/AutoComplPop"]
 	path = bundle/AutoComplPop
 	url = https://github.com/vim-scripts/AutoComplPop.git
-[submodule "bundle/ember.vim"]
-	path = disabled_bundle/ember.vim
-	url = https://github.com/dsawardekar/ember.vim.git
-[submodule "bundle/portkey"]
-	path = disabled_bundle/portkey
-	url = https://github.com/dsawardekar/portkey.git
 [submodule "bundle/Vundle.vim"]
 	path = bundle/Vundle.vim
 	url = https://github.com/gmarik/Vundle.vim.git
