@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Plugin List
-" AutoComplete
-Plug 'vim-scripts/AutoComplPop'
 " OmniCppComplete
 Plug 'vim-scripts/OmniCppComplete'
 " vim scirpts
