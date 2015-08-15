@@ -75,5 +75,5 @@ let g:tagbar_type_objc = {
 \ }
 "" END copied from http://www.daskrachen.com/2011/12/how-to-make-tagbar-work-with-objective.html
 
-" vundle init
-source $HOME/.vim/vimrc_vundle.vim
+" plug init
+ source $HOME/.vim/vimrc_plug.vim

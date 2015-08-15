@@ -1,2 +1,2 @@
-" vundle init
-source $HOME/.vim/vimrc_vundle.vim
+" plug init
+ source $HOME/.vim/vimrc_plug.vim
