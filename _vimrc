@@ -23,6 +23,9 @@ if version >= 703
    set undodir=~/VimBackup
 endif
 
+" plug init
+ source $HOME/.vim/vimrc_plug.vim
+
 " tabline function
 function MyTabLine()
 	let s = ''

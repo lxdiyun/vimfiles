@@ -32,8 +32,8 @@ Plug 'burnettk/vim-angular'
 "Plug 'dsawardekar/ember'
 "Plug 'dsawardekar/portkey'
 " Coffee
-Plug 'vim-coffee-script'
-Plug 'lukaszkorecki/CoffeeTags'
+"Plug 'vim-coffee-script'
+"Plug 'lukaszkorecki/CoffeeTags'
 " Golang
 Plug 'fatih/vim-go'
 " XML
