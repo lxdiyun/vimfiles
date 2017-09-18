@@ -347,6 +347,10 @@ smap <C-C>  <esc>:call AddOrRemoveComment('s')<cr>
 " page up/down
 map <C-J>   18j
 map <C-K>   18k
+
+" select just pasted text
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+
 " add indent
 "map  >   :<C-U>call AddIndent('n')<cr>
 "vmap >   :<C-U>call AddIndent('v')<cr>
