@@ -18,7 +18,7 @@ Plug 'kien/ctrlp.vim'
 " ctags
 Plug 'majutsushi/tagbar'
 " Python
-"Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 Plug 'ivanov/vim-ipython'
 Plug 'scrooloose/syntastic'
 Plug 'hynek/vim-python-pep8-indent'

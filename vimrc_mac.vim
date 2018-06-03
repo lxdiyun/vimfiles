@@ -77,3 +77,5 @@ let g:tagbar_type_objc = {
 
 " plug init
  source $HOME/.vim/vimrc_plug.vim
+
+set luadll=/usr/local/opt/lua/lib/liblua5.3.dylib
