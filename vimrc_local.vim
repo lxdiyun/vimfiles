@@ -12,13 +12,15 @@ if version >= 703
 	"disable undofile 
 	set noundofile
 	" set color column - column label
-	set colorcolumn=80,120
+	set colorcolumn=120,160
 endif
 
+"textwidth for wrap
+set textwidth=120
 " nocompatiable mode active
 set nocompatible
 " load example setting
-source $VIMRUNTIME/vimrc_example.vim
+"source $HOME/.vim/vimrc_example.vim
 " behave selection
 "behave mswin
 " set file encoding
@@ -74,7 +76,7 @@ set pastetoggle=<F12>
 " show a menu when using tab complementation under command mode
 set wildmenu
 " Required to be able to use keypad keys and map missed escape sequences
-set esckeys
+"set esckeys
 " Complete longest common string, then each full match enable this for bash compatible behaviour
 set wildmode=longest,full
 " enable syntax
@@ -99,6 +101,10 @@ set completeopt=menu,longest
 set pumheight=15
 " set autoc change dir
 set autochdir
+if &t_Co > 2 || has("gui_running")
+  " Switch on highlighting the last used search pattern.
+  set hlsearch
+endif
 
 """""""""""""""""""""""""""""""""""""
 " Self_defining function
@@ -494,3 +500,7 @@ let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+if has("nvim")
+	source $HOME/.vim/vimrc_nvim.vim
+endif

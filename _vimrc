@@ -4,23 +4,22 @@
 " Follow the _vimrc example
 """""""""""""""""""""""""""""""""""""
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
+"source $VIMRUNTIME/mswin.vim
 behave mswin
 
 let &termencoding=&encoding
 
 " self setting
-source $VIM/vimfiles/vimrc_local.vim
+source $HOME/.vim/vimrc_local.vim
 
 " set backup dir 
-set backupdir=D:\VimBackup
+set backupdir=~/VimBackup
 " set snippes file dir
-:let g:snippets_dir="$VIM/vimfiles/snippets"
+:let g:snippets_dir="$HOME/.vim/snippets"
 " vim 7.3 setting
 if version >= 703
 " set undo dir
-   set undodir=~/VimBackup
+   set undodir=$HOME/VimBackup
 endif
 
 " plug init
@@ -69,3 +68,9 @@ function MyTabLabel(n)
 	let filename = fnamemodify(filename, ':p:t') 
 	return filename
 endfunction
+
+
+" python bug fix
+"py3 import os; sys.executable=os.path.join(sys.prefix, 'python.exe')
+"set pythonthreehome=C:\\Users\\adli\\Anaconda3
+"set pythonthreedll=C:\\Users\\adli\\Anaconda3\\python37.dll

@@ -12,14 +12,14 @@ Plug 'bling/vim-airline'
 " file list
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " auto complete
-Plug 'Shougo/neocomplete.vim'
+"Plug 'Shougo/neocomplete.vim'
 " jump to files
 Plug 'kien/ctrlp.vim'
 " ctags
 Plug 'majutsushi/tagbar'
 " Python
-Plug 'davidhalter/jedi-vim'
-Plug 'ivanov/vim-ipython'
+"Plug 'davidhalter/jedi-vim'
+"Plug 'ivanov/vim-ipython'
 Plug 'scrooloose/syntastic'
 Plug 'hynek/vim-python-pep8-indent'
 " Javascript
@@ -38,8 +38,14 @@ Plug 'burnettk/vim-angular'
 Plug 'fatih/vim-go'
 " XML
 Plug 'sukima/xmledit'
-" ultisnips
-source $HOME/.vim/vimrc_ultisnips.vim
+if has('nvim')
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+
+	" ultisnips
+	source $HOME/.vim/vimrc_ultisnips.vim
+
+endif
 
 " Add plugins to &runtimepath
 call plug#end()
