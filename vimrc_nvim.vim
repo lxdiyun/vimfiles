@@ -4,4 +4,6 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " GUI setting
-autocmd UIEnter * source $HOME/.vim/gvimrc_neo_win
+if filereadable($HOME."/_gvimrc_neo_win")
+	autocmd UIEnter * source $HOME/_gvimrc_neo_win
+endif

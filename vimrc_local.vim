@@ -501,6 +501,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+"neovim
 if has("nvim")
 	source $HOME/.vim/vimrc_nvim.vim
 endif
