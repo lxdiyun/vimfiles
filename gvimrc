@@ -9,7 +9,7 @@ set guitablabel=%N\ %t
 " use Black colorscheme
 colorscheme Black
 " set window size
-set lines=45 columns=120
+set lines=45 columns=180
 " maximize the window
 "au GUIEnter * simalt ~x
 " taglist menu 

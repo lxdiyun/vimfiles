@@ -500,7 +500,10 @@ let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
+""""""""""""""""""""""""""""""""""""""""""""""
+" airline
+let g:airline_theme='atomic'
+""""""""""""""""""""""""""""""""""""""""""""""
 "neovim
 if has("nvim")
 	source $HOME/.vim/vimrc_nvim.vim

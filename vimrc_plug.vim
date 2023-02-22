@@ -8,7 +8,9 @@ Plug 'vim-scripts/lookupfile'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/ShowMarks'
 " status and tab line
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+"Plug '/vim-airline'
 " file list
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " auto complete
@@ -36,6 +38,8 @@ Plug 'burnettk/vim-angular'
 "Plug 'lukaszkorecki/CoffeeTags'
 " Golang
 Plug 'fatih/vim-go'
+" Beancount
+Plug 'nathangrigg/vim-beancount'
 " XML
 Plug 'sukima/xmledit'
 if has('nvim')
