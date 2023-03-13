@@ -502,7 +502,7 @@ let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 """"""""""""""""""""""""""""""""""""""""""""""
 " airline
-let g:airline_theme='atomic'
+let g:airline_theme='powerlineish'
 """"""""""""""""""""""""""""""""""""""""""""""
 "neovim
 if has("nvim")
