@@ -7,3 +7,6 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 if filereadable($HOME."/_gvimrc_neo_win")
 	autocmd UIEnter * source $HOME/_gvimrc_neo_win
 endif
+
+" neovim autoread fix
+autocmd FocusGained * silent! checktime

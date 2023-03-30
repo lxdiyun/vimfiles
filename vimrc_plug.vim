@@ -45,6 +45,7 @@ Plug 'sukima/xmledit'
 if has('nvim')
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+	Plug 'github/copilot.vim'
 
 	" ultisnips
 	source $HOME/.vim/vimrc_ultisnips.vim
