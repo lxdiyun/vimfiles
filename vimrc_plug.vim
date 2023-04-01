@@ -44,7 +44,9 @@ Plug 'nathangrigg/vim-beancount'
 Plug 'sukima/xmledit'
 if has('nvim')
 	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+	Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+
+	" copilot
 	Plug 'github/copilot.vim'
 
 	" ultisnips
