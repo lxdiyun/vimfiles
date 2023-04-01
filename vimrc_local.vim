@@ -51,8 +51,6 @@ set backup
 set foldlevel=999
 " set ignore case
 set ignorecase
-" set the Doxygen highlight to be default highlight
-let g:load_doxygen_syntax=1
 " set shiftwidth
 set shiftwidth=8
 " set tab width
