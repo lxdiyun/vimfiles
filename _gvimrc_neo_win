@@ -4,7 +4,7 @@
 "set GUI language
 language English
 "set GUI font
-"set guifont=NSimSun:h11
+set guifont=Consolas:h9
 " set tab label style under GUI mode
 set guitablabel=%N\ %t
 " use Black colorscheme
@@ -59,4 +59,6 @@ fun SetOpacity(percent)
      echo "Invalid Input"
   endif
 endfun
+
+let g:python3_host_prog = 'C:\Users\adli\AppData\Local\Programs\Python\Python38\python.exe'
 

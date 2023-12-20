@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " auto complete
 "Plug 'Shougo/neocomplete.vim'
+"Plug 'nvim-lua/completion-nvim'
 " jump to files
 Plug 'kien/ctrlp.vim'
 " ctags
@@ -25,23 +26,23 @@ Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
 Plug 'hynek/vim-python-pep8-indent'
 " Javascript
-Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'marijnh/tern_for_vim'
-Plug 'burnettk/vim-angular'
+"Plug 'pangloss/vim-javascript'
+"Plug 'jelera/vim-javascript-syntax'
+"Plug 'othree/javascript-libraries-syntax.vim'
+"Plug 'mustache/vim-mustache-handlebars'
+"Plug 'marijnh/tern_for_vim'
+"Plug 'burnettk/vim-angular'
 "Plug 'dsawardekar/ember'
 "Plug 'dsawardekar/portkey'
 " Coffee
 "Plug 'vim-coffee-script'
 "Plug 'lukaszkorecki/CoffeeTags'
 " Golang
-Plug 'fatih/vim-go'
+"Plug 'fatih/vim-go'
 " Beancount
 Plug 'nathangrigg/vim-beancount'
 " XML
-Plug 'sukima/xmledit'
+"Plug 'sukima/xmledit'
 if has('nvim')
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
@@ -51,7 +52,6 @@ if has('nvim')
 
 	" ultisnips
 	source $HOME/.vim/vimrc_ultisnips.vim
-
 endif
 
 " Add plugins to &runtimepath
