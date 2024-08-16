@@ -4,13 +4,13 @@
 "set GUI language
 language English
 "set GUI font
-set guifont=Consolas:h9
+set guifont=Consolas:h10
 " set tab label style under GUI mode
 set guitablabel=%N\ %t
 " use Black colorscheme
 colorscheme Black
 " set window size
-set lines=52 columns=125
+set lines=80 columns=180
 " maximize the window
 au GUIEnter * simalt ~x
 " taglist menu 
@@ -30,6 +30,7 @@ vnoremap <S-Del> "+x
 " CTRL-C and CTRL-Insert are Copy
 "vnoremap <C-C> "+y
 vnoremap <C-Insert> "+y
+
 
 "SHIFT-Insert are Paste                                                                                                                               
 map <S-Insert>          "+gP
@@ -59,6 +60,4 @@ fun SetOpacity(percent)
      echo "Invalid Input"
   endif
 endfun
-
-let g:python3_host_prog = 'C:\Users\adli\AppData\Local\Programs\Python\Python38\python.exe'
 

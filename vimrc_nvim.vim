@@ -4,7 +4,7 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " GUI setting
-if filereadable($HOME."/_gvimrc_neo_win")
+if filereadable($HOME."/_gvimrc_neo_win") && has('gui_running')
 	autocmd UIEnter * source $HOME/_gvimrc_neo_win
 endif
 

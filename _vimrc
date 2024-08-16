@@ -5,7 +5,10 @@
 """""""""""""""""""""""""""""""""""""
 set nocompatible
 "source $VIMRUNTIME/mswin.vim
-behave mswin
+set selection=exclusive
+set selectmode=mouse,key
+set mousemodel=popup
+set keymodel=startsel,stopsel
 
 let &termencoding=&encoding
 
